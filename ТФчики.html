@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MANN CO. Division</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #0f0f0f 0%, #141414 100%);
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #121212;
+    padding: 70px 20px;
+    text-align: center;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+header::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #cf6a2c;
+    display: block;
+    margin: 25px auto 0;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: #9a9a9a;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #cfcfcf;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* БАННЕР С ФОТО */
+.hero-image {
+    width: 100%;
+    background-color: #111;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 600px;
+}
+
+/* Анимация появления */
+.section {
+    padding: 70px 20px;
+    max-width: 950px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 0.9s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-top: 70px;
+    color: #cf6a2c;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #2b2b2b;
+    margin: 15px 0 35px 0;
+}
+
+.main-text {
+    font-size: 17px;
+    color: #dddddd;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #9a9a9a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #171717;
+    padding: 25px;
+    border: 1px solid #2b2b2b;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:hover {
+    border-color: #cf6a2c;
+    box-shadow: 0 0 15px rgba(207,106,44,0.15);
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    color: #cf6a2c;
+    margin-top: 0;
+}
+
+.founder {
+    border: 1px solid #cf6a2c;
+}
+
+.status-box {
+    background-color: #161616;
+    padding: 25px;
+    border: 1px solid #2b2b2b;
+    border-left: 3px solid #cf6a2c;
+    border-radius: 4px;
+}
+
+.buttons {
+    margin: 50px 0 60px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 11px 24px;
+    margin: 8px 12px 8px 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #cf6a2c;
+    border: 1px solid #cf6a2c;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #cf6a2c;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+.embed-post {
+    margin: 50px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 13px;
+    color: #666;
+    border-top: 1px solid #2b2b2b;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 30px; }
+    h2 { font-size: 20px; }
+    .section { padding: 50px 16px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MANN CO. Division</h1>
+    <div class="subtitle">Creative Visual Unit · Active Division</div>
+    <div class="tagline">
+        Tactical Creative Unit based on Team Fortress 2<br>
+        Cosplay · Media · Character Production
+    </div>
+</header>
+
+<!-- ФОТО-БАННЕР -->
+<div class="hero-image">
+    <img src="team.jpg" alt="MANN CO. Division Team">
+</div>
+
+<div class="section">
+
+    <h2>Статус проекта</h2>
+    <hr>
+    <div class="status-box">
+        <p class="small-text">
+            Основан: <strong>12.10.2025</strong><br>
+            Начало активной работы: <strong>20.10.2025</strong><br>
+            Текущий статус: <strong>Активен</strong>
+        </p>
+    </div>
+
+    <h2>Общая информация</h2>
+    <hr>
+    <p class="main-text">
+        <strong>MANN CO. Division</strong> — независимое творческое объединение, специализирующееся на разработке визуального контента и тематических проектов по вселенной Team Fortress 2. Мы создаём косплей-образы, фото- и видеопроекты, а также участвуем в мероприятиях, представляя культовых наёмников Mann Co. с вниманием к деталям, характеру и стилистике оригинала.
+        Наша цель — объединять творчество, командную работу и фирменную эстетику TF2 в единую профессиональную дивизию.
+    </p>
+
+    <h2>Участники</h2>
+    <hr>
+
+    <div class="grid">
+        <a href="https://t.me/tfochka/6" target="_blank" class="card founder">
+            <h3>Рин Миро</h3>
+            <p class="small-text">Основатель проекта</p>
+        </a>
+
+        <a href="https://t.me/tfochka/9" target="_blank" class="card">
+            <h3>Лирика</h3>
+            <p class="small-text">Работа с каналом · Фотосессия наёмников · Создатель сайта</p>
+        </a>
+
+        <a href="https://t.me/tfochka/7" target="_blank" class="card"><h3>Бадди</h3></a>
+        <a href="https://t.me/tfochka/10" target="_blank" class="card"><h3>WASD</h3></a>
+        <a href="https://t.me/tfochka/11" target="_blank" class="card"><h3>AlexDigl</h3></a>
+        <a href="https://t.me/tfochka/8" target="_blank" class="card"><h3>Тайлер</h3></a>
+        <a href="https://t.me/tfochka/12" target="_blank" class="card"><h3>Енот</h3></a>
+        <a href="https://t.me/tfochka/22" target="_blank" class="card"><h3>Арири</h3></a>
+        <a href="https://t.me/tfochka/40" target="_blank" class="card"><h3>Муравей</h3></a>
+    </div>
+
+    <div class="buttons">
+        <a href="https://t.me/tfochka" class="button">Основной канал</a>
+        <a href="https://t.me/archive_tfochka" class="button">Архив публикаций</a>
+    </div>
+
+    <h2>Пример контента</h2>
+    <hr>
+
+    <div class="embed-post">
+        <script async src="https://telegram.org/js/telegram-widget.js?23"
+            data-telegram-post="tfochka/30"
+            data-width="100%"></script>
+    </div>
+
+</div>
+
+<footer>
+    MANN CO. Division © 2026 · Independent Creative Project
+</footer>
+
+</body>
+</html>
